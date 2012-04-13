@@ -9,17 +9,13 @@ gem 'sqlite3'
 
 gem 'json'
 
-# Gems used only for assets and not required
-# in production environments by default.
-group :assets do
-
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer'
-
-  gem 'uglifier', '>= 1.0.3'
-end
-
 gem 'jquery-rails'
+
+group :test do
+
+  gem 'cucumber-rails'
+
+end
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
