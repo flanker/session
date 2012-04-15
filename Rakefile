@@ -7,4 +7,4 @@ require File.expand_path('../config/application', __FILE__)
 Session::Application.load_tasks
 Dir.glob('tasks/*.rake').each { |task| load task }
 
-task :ci => ['db:migrate', 'cucumber']
+task :ci => ['db:test:prepare', :spec, :cucumber]
