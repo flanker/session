@@ -2,13 +2,45 @@
 <html>
 <head>
   <title>Session</title>
-  <%= stylesheet_link_tag    "bootstrap", "bootstrap-responsive", :media => "all" %>
+  <%= stylesheet_link_tag    "bootstrap", "bootstrap-responsive", "core", :media => "all" %>
   <%= javascript_include_tag "jquery", "bootstrap" %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a class="brand" href="#">A Blog System</a>
+        <div class="nav-collapse">
+          <ul class="nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+  </div>
 
-<%= yield %>
+  <div class="container">
+
+    <div class="hero-unit narrow">
+      <div class="span3 offset7 clearfix">
+        <%= link_to 'New Post', new_post_path, :class => 'btn btn-primary' %>
+      </div>
+      <h1>My Blog</h1>
+      <p>a demo blog system</p>
+
+    </div>
+
+    <%= yield %>
+
+  </div>
 
 </body>
 </html>
