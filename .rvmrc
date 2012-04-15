@@ -1,1 +1,1 @@
-rvm --create use 1.8.7@session
+rvm --create use 1.8.7-p352@session

@@ -30,7 +30,11 @@ function check_rvm {
 
 function install_ruby {
   log "installing ruby"
-  rvm install ruby-1.8.7-p352 && \
+  rvm pkg install libxml2 && \
+  rvm pkg install openssl && \
+  rvm pkg install ncurses && \
+  rvm pkg install readline && \
+  rvm install ruby-1.8.7-p352 -C "--with-readline-dir=$HOME/.rvm/usr --with-xml-dir=$HOME/.rvm/usr --with-openssl-dir=$HOME/.rvm/usr " && \
   rvm use 1.8.7-p352 && \
   rvm gemset create session && \
   rvm use 1.8.7-p352@session
@@ -53,4 +57,5 @@ function check_bundler {
 }
 
 ruby_environment && \
+bundle install && \
 bundle exec rake $@
