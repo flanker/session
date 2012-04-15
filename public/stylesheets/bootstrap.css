@@ -868,17 +868,26 @@ textarea[readonly] {
   background-color: #fcf8e3;
   border-color: #c09853;
 }
+.control-group .field_with_errors > label,
+.control-group .field_with_errors .help-block,
+.control-group .field_with_errors .help-inline,
 .control-group.error > label,
 .control-group.error .help-block,
 .control-group.error .help-inline {
   color: #b94a48;
 }
+.controls .field_with_errors input,
+.controls .field_with_errors select,
+.controls .field_with_errors textarea,
 .control-group.error input,
 .control-group.error select,
 .control-group.error textarea {
   color: #b94a48;
   border-color: #b94a48;
 }
+.controls .field_with_errors input:focus,
+.controls .field_with_errors select:focus,
+.controls .field_with_errors textarea:focus,
 .control-group.error input:focus,
 .control-group.error select:focus,
 .control-group.error textarea:focus {
@@ -887,6 +896,8 @@ textarea[readonly] {
   -moz-box-shadow: 0 0 6px #d59392;
   box-shadow: 0 0 6px #d59392;
 }
+.controls .field_with_errors .input-prepend .add-on,
+.controls .field_with_errors .input-append .add-on,
 .control-group.error .input-prepend .add-on,
 .control-group.error .input-append .add-on {
   color: #b94a48;
@@ -1395,7 +1406,7 @@ table .span24 {
   height: 14px;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url("../img/glyphicons-halflings.png");
+  background-image: url("../images/glyphicons-halflings.png");
   background-position: 14px 14px;
   background-repeat: no-repeat;
   *margin-right: .3em;
@@ -1405,7 +1416,7 @@ table .span24 {
   *margin-left: 0;
 }
 .icon-white {
-  background-image: url("../img/glyphicons-halflings-white.png");
+  background-image: url("../images/glyphicons-halflings-white.png");
 }
 .icon-glass {
   background-position: 0      0;
