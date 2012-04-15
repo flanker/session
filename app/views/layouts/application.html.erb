@@ -15,10 +15,10 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </a>
-        <a class="brand" href="#">A Blog System</a>
+        <%= link_to "A Blog System", posts_path, :class => "brand" %>
         <div class="nav-collapse">
           <ul class="nav">
-            <li class="active"><a href="#">Home</a></li>
+            <li class="active"><%= link_to "Home", posts_path %></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -33,7 +33,7 @@
       <div class="span3 offset7 clearfix">
         <%= link_to 'New Post', new_post_path, :class => 'btn btn-primary' %>
       </div>
-      <h1>My Blog</h1>
+      <h1><%= link_to "My Blog", posts_path %></h1>
       <p>a demo blog system</p>
 
     </div>
