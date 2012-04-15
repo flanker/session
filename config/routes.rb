@@ -1,4 +1,7 @@
 Session::Application.routes.draw do
+
+  root :to => redirect('/posts')
+
   resources :posts
 
   # The priority is based upon order of creation:
