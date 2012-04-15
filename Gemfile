@@ -13,7 +13,7 @@ gem 'jquery-rails'
 group :test do
   gem 'database_cleaner'
   gem 'cucumber-rails', :require => false
-  gem 'rspec'
+  gem 'rspec-rails'
 end
 
 group :deployment do
