@@ -17,7 +17,7 @@ function load_rvm {
 
 function install_rvm {
   log "installing rvm"
-  bash < <(curl -s https://rvm.beginrescueend.com/install/rvm)
+  curl -L get.rvm.io | bash -s stable
   echo 'export rvm_project_rvmrc=1' >> $HOME/.rvmrc
   load_rvm
 }
