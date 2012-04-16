@@ -2,6 +2,11 @@ body {
   padding-top: 60px;
   padding-bottom: 40px;
 }
+@media (max-width: 979px) {
+  body {
+    padding: 0px;
+  }
+}
 .narrow {
   padding-top: 10px;
   padding-bottom: 10px;
