@@ -26,3 +26,7 @@ Then /^there should have the following post in the home page:$/ do |table|
     page.should have_content(value)
   end
 end
+
+Then /^I should see the error message "([^"]*)"$/ do |error|
+  page.should have_content(error)
+end
