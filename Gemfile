@@ -34,5 +34,3 @@ end
 
 # To use debugger
 gem 'ruby-debug'
-
-gem "rubber", "1.15.0"
