@@ -14,12 +14,11 @@ Feature: Create new post
       | Title   | My first post      |
       | Content | first post content |
 
-  @wip
   Scenario: Title and content
     When I go to home page
     And I click 'New post'
     And I save the post
-    Then I should see the error message "Title can not be empty"
-    And I should see the error message "Content can not be empty"
+    Then I should see the error message "Title can't be blank"
+    And I should see the error message "Content can't be blank"
 
 
