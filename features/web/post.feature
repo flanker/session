@@ -18,7 +18,7 @@ Feature: Create new post
     When I go to home page
     And I click 'New post'
     And I save the post
-    Then I should see the error message "Title can't be blank"
-    And I should see the error message "Content can't be blank"
+    Then I should see the error message "Title can not be empty"
+    And I should see the error message "Content can not be empty"
 
 
