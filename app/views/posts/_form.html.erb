@@ -15,17 +15,18 @@
     <div class="control-group">
       <%= f.label :title, :class => "control-label" %>
       <div class="controls">
-        <%= f.text_field :title, :class => "input-xlarge span5" %>
+        <%= f.text_field :title, :class => "input-xlarge span5", :placeholder => "type your title here..." %>
       </div>
     </div>
     <div class="control-group">
       <%= f.label :content, :class => "control-label" %>
       <div class="controls">
-        <%= f.text_area :content, :class => "input-xlarge span5", :rows => "20" %>
+        <%= f.text_area :content, :class => "input-xlarge span5", :rows => "20", :placeholder => "type your content here..." %>
       </div>
     </div>
     <div class="form-actions">
       <%= f.submit :class => "btn btn-primary" %>
+      <%= link_to 'Back', posts_path, :class => "btn" %>
     </div>
   </fieldset>
 
