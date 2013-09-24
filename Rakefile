@@ -8,5 +8,10 @@ require 'jasmine'
 Session::Application.load_tasks
 Dir.glob('tasks/*.rake').each { |task| load task }
 
-task :ci => ['db:test:prepare', :spec, :cucumber]
+task :local => ['db:test:prepare', :spec, :cucumber]
+
+task :ci do
+  ENV['CAPYBARA_DRIVER'] = 'rack_test'
+  Rake::Task['local'].invoke
+end
 task :default => [:ci]
