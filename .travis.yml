@@ -16,6 +16,6 @@ deploy:
   provider: heroku
   run: "rake db:migrate"
   app:
-    master:blog-qa
+    master: blog-qa
   api_key:
     secure: "iVFceMs8qlQ6IyJSF0CTDyTMkVr0VDY0SXgBZY7Kq1GkUEBrNDbEVl+Q14HPbRIJt8IeSemP37vURt0YG/WKa1XFteXMprstZ8UBelixieT9e7PLJFA2u9/XwKLmFNfsPXGPB0DmIYKmg2sZ9+K5BrQalyWxXGCsD9nCP4jrgmY="
