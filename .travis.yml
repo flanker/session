@@ -11,3 +11,4 @@ env:
   global:
     - S3_REGION=us-west-1
     - S3_BUCKET_NAME=fengzhichao-gems
+    - secure: "Ye9MH/1DXS8qkvm3J2GDsqltBrjfISCvc50ldzz2y1kJryjxnkBzNrzYelA5xaVnJXaA2tPGTCBYFIZcontEd282ky5DOB0/wVt1HENzezsbfy33xJiBiuBE9b1lbeSDKdmeAMs9wbznRVUO2DE9eWt3Se3ufl/pzIdZLatQ8Q0="
