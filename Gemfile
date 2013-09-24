@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
-# source 'http://ruby.taobao.org/'
 
-gem 'rails', '3.2.2'
+gem 'rails'
 gem 'json'
 gem 'jquery-rails'
 
@@ -13,6 +12,7 @@ group :test do
   gem 'database_cleaner'
   gem 'cucumber-rails', :require => false
   gem 'rspec-rails'
+  gem 'jasmine'
 end
 
 group :deployment do

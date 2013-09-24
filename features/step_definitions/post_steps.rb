@@ -5,7 +5,9 @@ When /^I go to home page$/ do
 end
 
 When /^I click 'New post'$/ do
-  click_link 'New Post'
+  within ('.blog-header')do
+    click_link 'New Post'
+  end
 end
 
 When /^I fill in the following:$/ do |table|

@@ -26,19 +26,19 @@ begin
     desc "Run all database tests"
     RSpec::Core::RakeTask.new(:database_reliant => spec_prereq) do |t|
       t.pattern = "./spec"
-      t.spec_opts = spec_opts + ['--tag', 'database_reliant']
+      t.rspec_opts = spec_opts + ['--tag', 'database_reliant']
     end
 
     desc "Run all non database tests"
     RSpec::Core::RakeTask.new(:non_database_reliant => spec_prereq) do |t|
       t.pattern = "./spec"
-      t.spec_opts = spec_opts + ['--tag', '~database_reliant', '-r', './spec/database_exploder.rb']
+      t.rspec_opts = spec_opts + ['--tag', '~database_reliant', '-r', './spec/database_exploder.rb']
     end
 
     desc "Run all spec tests"
     RSpec::Core::RakeTask.new(:spec => spec_prereq) do |t|
       t.pattern = "./spec"
-      t.spec_opts = spec_opts
+      t.rspec_opts = spec_opts
     end
 
     desc "Run all specs but with smartness"
