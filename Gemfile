@@ -15,10 +15,6 @@ group :test do
   gem 'jasmine'
 end
 
-group :deployment do
-  gem 'yun'
-end
-
 group :production do
   gem 'pg'
 end

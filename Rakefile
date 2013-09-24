@@ -8,5 +8,5 @@ require 'jasmine'
 Session::Application.load_tasks
 Dir.glob('tasks/*.rake').each { |task| load task }
 
-task :ci => ['db:test:prepare', :spec, :cucumber]
+task :ci => ['db:migrate', 'db:test:prepare', :spec, :cucumber]
 task :default => [:ci]
