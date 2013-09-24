@@ -1,8 +1,30 @@
-body {
-  padding-top: 60px;
-  padding-bottom: 40px;
+@media (min-width: 980px) {
+  body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
 }
 .narrow {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.hero-unit h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+.hero-unit h1 {
+  font-size: 32px;
+}
+.hero-unit {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.blog-header {
+  position: relative;
+}
+.blog-header .actions {
+  position: absolute;
+  right: 60px;
+  top: 20px;
 }
