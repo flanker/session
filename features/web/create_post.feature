@@ -9,7 +9,7 @@ Feature: Create new post
       | Title   | My first post      |
       | Content | first post content |
     And I save the post
-    Then I should redirect to post index page
+    Then I should be redirected to post index page
     And there should have the following post in the home page:
       | Title   | My first post      |
       | Content | first post content |

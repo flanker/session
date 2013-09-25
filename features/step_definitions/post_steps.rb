@@ -20,7 +20,7 @@ When /^I save the post$/ do
   click_button 'Create Post'
 end
 
-Then /^I should redirect to post index page/ do
+Then /^I should be redirected to post index page/ do
 end
 
 Then /^there should have the following post in the home page:$/ do |table|
