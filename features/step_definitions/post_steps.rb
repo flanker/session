@@ -21,9 +21,10 @@ When /^I save the post$/ do
 end
 
 Then /^I should be redirected to post index page/ do
+  page.current_path.should == '/posts'
 end
 
-Then /^there should have the following post in the home page:$/ do |table|
+Then(/^I should see following post:$/) do |table|
   table.rows_hash.each do |key, value|
     page.should have_content(value)
   end

@@ -10,12 +10,12 @@ describe PostsController do
     end
 
     it 'should save post' do
-      @post.title.should == 'my title'
-      @post.content.should == 'my content'
+      @post.title.should === 'my title'
+      @post.content.should === 'my content'
     end
 
     it 'should redirect to post detail page' do
-      response.status.should == 302
+      response.status.should === 302
       response.should redirect_to(post_path(@post))
     end
 
