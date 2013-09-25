@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails'
 gem 'json'
 gem 'jquery-rails'
+gem 'debugger'
 
 group :development, :test do
   gem 'sqlite3-ruby', :require => 'sqlite3'
