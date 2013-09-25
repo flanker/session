@@ -10,7 +10,7 @@ group :development, :test do
 end
 
 group :test do
-  gem 'database_cleaner'
+  gem 'database_cleaner', '< 1.1.0'
   gem 'cucumber-rails', :require => false
   gem 'rspec-rails'
   gem 'jasmine'
