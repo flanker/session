@@ -19,6 +19,18 @@ describe PostsController do
       response.should redirect_to(post_path(@post))
     end
 
+    describe 'delete post' do
+
+      before(:each) do
+        post :destroy, :id => @post.id
+      end
+
+      it 'should not be found' do
+        Post.count.should === 0
+      end
+
+    end
+
   end
 
 end

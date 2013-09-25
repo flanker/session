@@ -20,7 +20,7 @@ When /^I save the post$/ do
   click_button 'Create Post'
 end
 
-Then /^I should be redirected to post index page/ do
+Then /^I should be redirected to home page/ do
   page.current_path.should == '/posts'
 end
 
@@ -32,4 +32,20 @@ end
 
 Then /^I should see the error message "([^"]*)"$/ do |error|
   page.should have_content(error)
+end
+
+Given(/^I have post$/) do
+  @post = Post.create(title: 'La La la', content: 'bla bla')
+end
+
+When(/^I go to the post detail page$/) do
+  visit "/posts/#{@post.id}"
+end
+
+When(/^I click 'Delete'$/) do
+  click_button 'Delete'
+end
+
+Then(/^I should not see that post$/) do
+  page.should_not have_content('La La la')
 end
